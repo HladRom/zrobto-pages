@@ -59,6 +59,7 @@
       border-radius: 16px;
       object-fit: cover;
       box-shadow: 0 10px 24px rgba(249, 115, 22, 0.22);
+      background: #ffffff;
     }
 
     .brand-title {
@@ -79,11 +80,16 @@
       font-size: 17px;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
     .card {
       border: 1px solid #f3e3d6;
       border-radius: 22px;
       padding: 22px;
-      margin: 16px 0;
       background: var(--card);
       box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
@@ -98,6 +104,11 @@
       margin-top: 0;
       margin-bottom: 10px;
       font-size: 22px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 14px;
     }
 
     a {
@@ -164,16 +175,18 @@
       </div>
     </section>
 
-    <section class="card">
-      <h2>Polityka prywatności i regulamin</h2>
-      <p>Zasady korzystania z aplikacji, dane osobowe, bezpieczeństwo, moderacja i odpowiedzialność.</p>
-      <a class="button-link" href="privacy.html">Otwórz dokument</a>
-    </section>
+    <section class="grid">
+      <article class="card">
+        <h2>Polityka prywatności i regulamin</h2>
+        <p>Zasady korzystania z aplikacji, dane osobowe, bezpieczeństwo, moderacja i odpowiedzialność.</p>
+        <a class="button-link" href="privacy.html">Otwórz dokument</a>
+      </article>
 
-    <section class="card">
-      <h2>Usunięcie konta</h2>
-      <p>Instrukcja usunięcia konta w aplikacji oraz przez kontakt e-mail, jeżeli nie masz dostępu do aplikacji.</p>
-      <a class="button-link" href="delete-account.html">Otwórz instrukcję</a>
+      <article class="card">
+        <h2>Usunięcie konta</h2>
+        <p>Instrukcja usunięcia konta w aplikacji oraz przez kontakt e-mail, jeżeli nie masz dostępu do aplikacji.</p>
+        <a class="button-link" href="delete-account.html">Otwórz instrukcję</a>
+      </article>
     </section>
 
     <p class="footer">
